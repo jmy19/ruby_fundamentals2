@@ -19,3 +19,7 @@ end
 puts grocery_list[1]
 
 listprint(grocery_list.sort)
+
+grocery_list.delete("bacon")
+listprint(grocery_list)
+
