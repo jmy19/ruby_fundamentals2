@@ -7,3 +7,5 @@ end
 grocery_list.push("rice")
 
 listprint(grocery_list)
+
+puts "total items on the list: #{grocery_list.count}"
