@@ -17,3 +17,5 @@ else
 end
 
 puts grocery_list[1]
+
+listprint(grocery_list.sort)
