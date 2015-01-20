@@ -6,9 +6,10 @@ students = {
 
 def listprint(list)
 	list.each do |x, y|
-		puts "#{x.to_s}: #{y} students"
+		puts "#{x}: #{y} students"
 	end
 end
 
 listprint(students)
 
+students[:cohort4] = 43s
