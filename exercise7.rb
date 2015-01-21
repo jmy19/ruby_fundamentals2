@@ -17,10 +17,9 @@ students[:cohort4] = 43
 puts students.keys
 
 students.each_value do |y|
-	y *= 1.05
+	new_v = y *= 1.05
+	puts new_v.to_i
 end
-
-listprint(students)
 
 students.delete(:cohort2)
 
