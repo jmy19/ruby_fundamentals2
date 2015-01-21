@@ -6,8 +6,8 @@ students = {
 }
 
 def listprint(list)
-	list.each do |x, y|
-		puts "#{x}: #{y} students"
+	list.each do |k, v|
+		puts "#{k}: #{v} students"
 	end
 end
 
@@ -20,10 +20,10 @@ students[:cohort4] = 43
 puts students.keys
 
 #step 4
-students.each_value do |y|
-	new_v = y *= 1.05
-	puts new_v.to_i
-end
+
+students.each { |k, v| students[k] = (v * 1.05).to_i}
+listprint(students)
+
 
 #step 5
 students.delete(:cohort2)
@@ -31,9 +31,6 @@ listprint(students)
 
 #step 6
 total_students = 0
-
-students.each_value do |y|
-	total_students += y
-end
+students.each_value { |y| total_students += y}
 puts total_students
 
