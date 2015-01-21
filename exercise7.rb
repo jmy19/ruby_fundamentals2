@@ -12,4 +12,6 @@ end
 
 listprint(students)
 
-students[:cohort4] = 43s
+students[:cohort4] = 43
+
+puts students.keys
