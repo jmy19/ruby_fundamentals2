@@ -15,3 +15,21 @@ listprint(students)
 students[:cohort4] = 43
 
 puts students.keys
+
+students.each_value do |y|
+	y *= 1.05
+end
+
+listprint(students)
+
+students.delete(:cohort2)
+
+listprint(students)
+
+total_students = 0
+
+students.each_value do |y|
+	total_students += y
+end
+puts total_students
+
